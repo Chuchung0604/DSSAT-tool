@@ -33,7 +33,7 @@ for line in f.readlines():
             if "@YEAR" in r:
                 r_new = r.replace("@YEAR","YEAR")
                 header.append(r_new)
-            if "#" in r:
+            elif "#" in r:
                 r_new = r.replace("#","_")
                 header.append(r_new)
             elif "%" in r:
